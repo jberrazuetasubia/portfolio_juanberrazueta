@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.app {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(40, 40, 40);
+    background: linear-gradient(328deg, rgba(40, 40, 40, 1) 0%, rgba(97, 100, 167, 1) 100%);
+}

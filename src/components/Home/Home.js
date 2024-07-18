@@ -6,6 +6,7 @@ const Home = () => {
         <>
             <div className="home">
                 
+                div
                 <div className='presentation-wrapper'>
                     <div class='row'>
                         <div class='column'>
@@ -21,7 +22,7 @@ const Home = () => {
                     <div class='row'>
                         <div class='column'>
                             <div className='presentation-image'>
-                                < h1>Hi!</h1>
+                                < h1>Htessssi!</h1>
                               </div>
                         </div>
                     </div>

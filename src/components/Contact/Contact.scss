@@ -1,0 +1,89 @@
+.contact {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+
+    .contact-wrapper {
+        max-width: 600px;
+        width: 100%;
+        text-align: center;
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .typewriter-effect {
+            margin: 15px 0;
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #d114db; /* Highlighted for emphasis */
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+
+            .form-group {
+                margin-bottom: 20px;
+                text-align: left;
+
+                label {
+                    display: block;
+                    margin-bottom: 5px;
+                    font-size: 1rem;
+                }
+
+                input,
+                textarea {
+                    width: 100%;
+                    padding: 10px;
+                    font-size: 1rem;
+                    color: #333;
+                    background: #fff;
+                    border: none;
+                    border-radius: 5px;
+                    outline: none;
+
+                    &:focus {
+                        border: 2px solid #bbd41e;
+                    }
+                }
+
+                textarea {
+                    resize: none;
+                }
+            }
+
+            .submit-button {
+                padding: 12px 24px;
+                font-size: 16px;
+                color: white;
+                background-color: transparent;
+                border: 2px solid white;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: transform 0.3s, background-color 0.3s;
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.2);
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .contact-wrapper {
+        padding: 20px;
+    }
+}

@@ -3,8 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     padding: 20px;
+    margin-top:150px;
 
     .contact-wrapper {
         max-width: 600px;
@@ -17,7 +17,7 @@
         }
 
         .typewriter-effect {
-            margin: 15px 0;
+            margin: 50px 0;
             font-size: 1.2rem;
             font-style: italic;
             color: #d114db; /* Highlighted for emphasis */
@@ -80,6 +80,16 @@
             }
         }
     }
+    .status-message {
+        margin-top: 20px;
+        font-size: 1rem;
+        color: #4caf50; // Success
+    }
+    
+    .status-message.error {
+        color: #f44336; // Error
+    }
+    
 }
 
 @media (max-width: 800px) {

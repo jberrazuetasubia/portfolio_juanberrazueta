@@ -37,10 +37,20 @@ const WebDevelopment = () => {
             <div className="projects-section">
                 <h2>Highlighted Projects</h2>
                 <div className="projects-wrapper">
-                    <div className="project-card">
-                        <h3>Portfolio Website</h3>
+                    <a
+                        href="https://art-in-augmented-reality.web.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-card"
+                    >
+                        <h3>ART in Augmented Reality</h3>
                         <p>A personal portfolio to showcase my skills and projects, built with React and Firebase.</p>
-                    </div>
+                        <iframe
+                            src="https://art-in-augmented-reality.web.app/home"
+                            title="ART in Augmented Reality"
+                            className="project-iframe"
+                        ></iframe>
+                    </a>
                     <div className="project-card">
                         <h3>E-commerce Store</h3>
                         <p>

@@ -51,13 +51,20 @@ const WebDevelopment = () => {
                             className="project-iframe"
                         ></iframe>
                     </a>
-                    <div className="project-card">
-                        <h3>E-commerce Store</h3>
-                        <p>
-                            A fully responsive e-commerce application featuring a product catalog, cart functionality, and
-                            payment integration using Stripe.
-                        </p>
-                    </div>
+                    <a
+                        href="https://panita-food.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-card"
+                    >
+                        <h3>Panita Food</h3>
+                        <p>A personal portfolio to showcase my skills and projects, built with React and Firebase.</p>
+                        <iframe
+                            src="https://panita-food.vercel.app/"
+                            title="Panita Food"
+                            className="project-iframe"
+                        ></iframe>
+                    </a>
                     <div className="project-card">
                         <h3>Blog Platform</h3>
                         <p>

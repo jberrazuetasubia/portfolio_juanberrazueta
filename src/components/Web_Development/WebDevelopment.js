@@ -2,6 +2,31 @@ import React from 'react';
 import Typewriter from 'typewriter-effect';
 import './WebDevelopment.scss';
 
+const projects = [
+    {
+        title: "ART in Augmented Reality",
+        description: "Thesis from Universidad San Francisco de Quito, a web platform that allows users to visualize art pieces in augmented reality.",
+        url: "https://art-in-augmented-reality.web.app/",
+        imgSrc: "/assets/images/screenshots/art-screenshot.png",
+        qrCodeSrc: "/assets/qrcodes/artQR.png",
+        youtubeUrl: "https://www.youtube.com/embed/joIjXn2vBqs?si=Ys6nGvSv3uo0Y8B5"
+    },
+    {
+        title: "Panita Food",
+        description: "An engaging food ordering platform with a modern UI, built using React and Firebase.",
+        url: "https://panita-food.vercel.app/",
+        imgSrc: "/assets/panita-food.jpg",
+        qrCodeSrc: "/assets/qrcodes/panita-food.png"
+    },
+    {
+        title: "Blog Platform",
+        description: "A blogging platform with a custom CMS, user authentication, and content management features.",
+        url: "https://panita-food.vercel.app/",
+        imgSrc: "/assets/blog-platform.jpg",
+        qrCodeSrc: "/assets/qrcodes/blog-platform.png"
+    }
+];
+
 const WebDevelopment = () => {
     return (
         <div className="web-development">
@@ -36,42 +61,28 @@ const WebDevelopment = () => {
 
             <div className="projects-section">
                 <h2>Highlighted Projects</h2>
-                <div className="projects-wrapper">
-                    <a
-                        href="https://art-in-augmented-reality.web.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="project-card"
-                    >
-                        <h3>ART in Augmented Reality</h3>
-                        <p>A personal portfolio to showcase my skills and projects, built with React and Firebase.</p>
-                        <iframe
-                            src="https://art-in-augmented-reality.web.app/home"
-                            title="ART in Augmented Reality"
-                            className="project-iframe"
-                        ></iframe>
-                    </a>
-                    <a
-                        href="https://panita-food.vercel.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="project-card"
-                    >
-                        <h3>Panita Food</h3>
-                        <p>A personal portfolio to showcase my skills and projects, built with React and Firebase.</p>
-                        <iframe
-                            src="https://panita-food.vercel.app/"
-                            title="Panita Food"
-                            className="project-iframe"
-                        ></iframe>
-                    </a>
-                    <div className="project-card">
-                        <h3>Blog Platform</h3>
-                        <p>
-                            A blogging platform with a custom CMS, user authentication, and content management features.
-                        </p>
+                {projects.map((project, index) => (
+                    <div className="project-item" key={index}>
+                        <div className="project-details">
+                            <h3>{project.title}</h3>
+                            <p>{project.description}</p>
+                            <a
+                                href={project.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="visit-button"
+                            >
+                                Visit Website
+                            </a>
+                            <img src={project.imgSrc} alt={`${project.title} Screenshot`} className="project-screenshot" />
+                            <iframe className="youtube" src={project.youtubeUrl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div className="qr-code-section">
+                            <img src={project.qrCodeSrc} alt={`${project.title} QR Code`} className="qr-code" />
+                            <h3>Scan QR Code</h3>
+                        </div>
                     </div>
-                </div>
+                ))}
             </div>
         </div>
     );

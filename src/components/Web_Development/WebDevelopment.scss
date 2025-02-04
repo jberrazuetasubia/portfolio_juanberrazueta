@@ -4,11 +4,12 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    max-width: 70%;
+    max-width: 80%;
     margin: 0 auto;
+
     .intro-section {
         text-align: center;
-        
+
 
         h1 {
             font-size: 2.5rem;
@@ -37,13 +38,14 @@
             list-style: none;
             padding: 20px;
             transition: transform 0.3s;
+
             :hover {
                 background: #421057;
                 transform: scale(1.05);
                 transition: transform 0.3s;
 
             }
-            
+
             li {
                 font-size: 1.1rem;
                 background: #146980;
@@ -58,54 +60,90 @@
     }
 
     .projects-section {
-        h2 {
+        text-align: center;
+        h2{
             font-size: 2rem;
-            margin-bottom: 20px;
-            text-align: center;
+            margin-bottom: 30px;
         }
-
-        .projects-wrapper {
+        .project-item {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
+            align-items: center;
+            justify-content: space-between;
+            background: #5a01a2;
+            border-radius: 10px;
             padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-            .project-card {
-                position: relative;
-                background: #421057;
-                color: #fff;
-                padding: 20px;
-                border-radius: 10px;
-                width: calc(33.33% - 20px);
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                text-decoration: none; // Ensure no underline for links
-                transition: transform 0.3s ease;
+            .project-details {
+                flex: 1;
+                padding-right: 20px;
             
-                h3{
-                    font-size: 1.5rem;
-                    margin-bottom: 10px;
+                h3 {
+                    font-size: 1.8rem;
+                    color: #ffffff;
                 }
+            
                 p {
-                    color: inherit; // Ensure text color remains consistent
-                    margin-bottom: 10px;
+                    font-size: 1.1rem;
+                    margin: 10px 0;
                 }
             
-                .project-iframe {
-                    width: 100%;
-                    height: 200px;
-                    border: none;
+                .visit-button {
+                    display: inline-block;
+                    background: #146980;
+                    color: #fff;
+                    padding: 10px 15px;
+                    text-decoration: none;
                     border-radius: 8px;
-                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-                    margin-top: 10px;
+                    font-weight: bold;
+                    transition: background 0.3s ease;
+            
+                    &:hover {
+                        background: #0e4e5a;
+                    }
                 }
             
-                &:hover {
-                    transform: translateY(-5px);
-                    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+                .project-screenshot {
+                    display: block;
+                    width: 75%;
+                    height: auto;
+                    margin: 0 auto;
+                    border-radius: 10px;
+                    margin-top: 10px;
+                    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+                }
+                .youtube{
+                    display: block;
+                    width: 75%;
+                    height: auto;
+                    height: 500px;
+                    margin: 0 auto;
+                    border-radius: 10px;
+                    margin-top: 10px;
+                    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
                 }
             }
             
+            .qr-code-section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            
+                .qr-code {
+                    width: 250px;
+                    height: auto;
+                    border-radius: 5px;
+                    margin-bottom: 10px;
+                }
+            
+                h3 {
+                    font-size: 1.5rem;
+                    color: #ffffff;
+                    text-align: center;
+                    margin: 0 auto;
+                }
+            }
         }
     }
 

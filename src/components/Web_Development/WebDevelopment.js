@@ -63,7 +63,6 @@ const WebDevelopment = () => {
                 <h2>Highlighted Projects</h2>
                 {projects.map((project, index) => (
                     <div className="project-item" key={index}>
-                        <div className="project-details">
                             <h3>{project.title}</h3>
                             <p>{project.description}</p>
                             <a
@@ -74,14 +73,18 @@ const WebDevelopment = () => {
                             >
                                 Visit Website
                             </a>
-                            <img src={project.imgSrc} alt={`${project.title} Screenshot`} className="project-screenshot" />
-                            <iframe className="youtube" src={project.youtubeUrl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div className='content-container'>
+                                <div className='project-media'>
+                                    <img src={project.imgSrc} alt={`${project.title} Screenshot`} className="project-screenshot" />
+                                    <iframe className="youtube" src={project.youtubeUrl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div className="qr-code-section">
+                                    <img src={project.qrCodeSrc} alt={`${project.title} QR Code`} className="qr-code" />
+                                    <h3>Scan QR Code</h3>
+                                </div>
+                            </div>
                         </div>
-                        <div className="qr-code-section">
-                            <img src={project.qrCodeSrc} alt={`${project.title} QR Code`} className="qr-code" />
-                            <h3>Scan QR Code</h3>
-                        </div>
-                    </div>
+
                 ))}
             </div>
         </div>

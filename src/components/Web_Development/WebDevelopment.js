@@ -5,7 +5,7 @@ import './WebDevelopment.scss';
 const projects = [
     {
         title: "ART in Augmented Reality",
-        description: "Thesis from Universidad San Francisco de Quito, a web platform that allows users to visualize art pieces in augmented reality.",
+        description: "Thesis from Universidad San Francisco de Quito, a web platform that allows users to visualize art pieces in augmented reality. Winner of COCOA Award 2022 for Best Innovative Project of the Year.",
         url: "https://art-in-augmented-reality.web.app/",
         imgSrc: "/assets/images/screenshots/art-screenshot.png",
         qrCodeSrc: "/assets/qrcodes/artQR.png",
@@ -13,10 +13,10 @@ const projects = [
     },
     {
         title: "Panita Food",
-        description: "An engaging food ordering platform with a modern UI, built using React and Firebase.",
+        description: "Panita Food is a personal project to help people find the best recipes for their daily meals. We provide a variety of recipes from all over the world along with nutritional information. Our goal is to assist people in discovering the perfect recipe for their daily meals.",
         url: "https://panita-food.vercel.app/",
-        imgSrc: "/assets/panita-food.jpg",
-        qrCodeSrc: "/assets/qrcodes/panita-food.png"
+        imgSrc: "/assets/panitaQR.png",
+        qrCodeSrc: "/assets/qrcodes/panitaQR.png"
     },
     {
         title: "Blog Platform",

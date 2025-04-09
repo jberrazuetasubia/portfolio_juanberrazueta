@@ -14,10 +14,10 @@ const cards = [
     ]
   },
   {
-    title: 'Sci-Fi Drone',
-    description: 'Concept drone for a sci-fi film project.',
-    iframeUrl: 'https://www.meshmorph.com/iframe/embed/another-drone-url',
-    software: ['Blender', 'Substance Painter'],
+    title: 'AntiVenom Rigged Character',
+    description: 'This project is a rigged character modelled for animation and game development.',
+    iframeUrl: 'https://www.meshmorph.com/iframe/embed/203f679f-6212-4d29-8e83-637a75b4ce40',
+    software: ['ZBrush', 'Maya'],
     images: [
       'https://via.placeholder.com/800x600?text=Drone+1',
       'https://via.placeholder.com/800x600?text=Drone+2',

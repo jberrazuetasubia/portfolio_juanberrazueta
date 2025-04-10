@@ -5,7 +5,7 @@ $shadow: rgba(0, 255, 225, 0.5);
 
 .modeling {
   padding: 2rem;
-  max-width: 1500px;
+  max-width: 1300px;
   margin: 0 auto;
   color: #fff;
 
@@ -53,10 +53,17 @@ $shadow: rgba(0, 255, 225, 0.5);
     }
 
     .card1 {
+      flex: 1 1 ;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      overflow: hidden;
+    
       iframe {
         width: 100%;
         height: 100%;
         border: none;
+        display: block;
       }
     }
 
@@ -67,7 +74,8 @@ $shadow: rgba(0, 255, 225, 0.5);
         display: flex;
         flex-wrap: wrap;
         gap: 0.5rem;
-
+        margin-top: 25px;
+        text-align: center;
         .tag {
           background-color: $tag-bg;
           color: #fff;
@@ -79,13 +87,35 @@ $shadow: rgba(0, 255, 225, 0.5);
       }
     }
 
+    .video-section {
+      margin-top: 1.5rem;
+    
+      .video-wrapper {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; // 16:9 aspect ratio
+        height: 0;
+    
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+      }
+    }
+    
     .carousel-section {
+      margin-top: 1.5rem;
+    
       .carousel-wrapper {
         position: relative;
         width: 100%;
         height: 500px;
         overflow: hidden;
-
+    
         .carousel-slide {
           position: absolute;
           top: 0;
@@ -97,13 +127,13 @@ $shadow: rgba(0, 255, 225, 0.5);
           display: flex;
           justify-content: center;
           align-items: center;
-
+    
           img {
             height: 100%;
             width: auto;
             object-fit: contain;
           }
-
+    
           &.active {
             opacity: 1;
             z-index: 1;
@@ -111,6 +141,7 @@ $shadow: rgba(0, 255, 225, 0.5);
         }
       }
     }
+    
   }
 
   // Responsive Styles

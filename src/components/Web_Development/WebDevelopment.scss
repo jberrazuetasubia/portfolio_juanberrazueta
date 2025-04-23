@@ -126,6 +126,7 @@ body, html {
             }
   
             .slick-carousel {
+              overflow: hidden;
                 margin-top: 20px;
                 scrollbar-width: none; // Firefox
                 &::-webkit-scrollbar {

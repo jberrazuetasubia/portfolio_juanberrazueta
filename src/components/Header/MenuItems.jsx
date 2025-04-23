@@ -14,9 +14,9 @@ const MenuItems = ({ toggleMenu }) => (
   <ul className="main-menu">
     {items.map((item, index) => (
       <li key={item.name}>
-        <Link to={item.path} onClick={toggleMenu}>
-  <span className="nm">{String(index + 1).padStart(2, '0')}.</span> {item.name}
-</Link>
+        <Link className='name' to={item.path} onClick={toggleMenu}>
+          <span className="nm">{String(index + 1).padStart(2, '0')}.</span> {item.name}
+        </Link>
       </li>
     ))}
   </ul>

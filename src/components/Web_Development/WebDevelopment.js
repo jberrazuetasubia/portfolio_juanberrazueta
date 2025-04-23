@@ -32,14 +32,16 @@ const projects = [
     ]
   },
   {
-    title: "Blog Platform",
-    description: "A blogging platform with a custom CMS...",
-    url: "https://panita-food.vercel.app/",
-    qrCodeSrc: "/assets/qrcodes/blog-platform.png",
+    title: "GAIAS Foundation - University of San Francisco de Quito",
+    description: "This project was developed for the GAIAS Foundation, which is part of the University of San Francisco de Quito. The website is designed to provide information about the foundation and its activities.",
+    url: "https://gaias.org/",
+    qrCodeSrc: "/assets/qrcodes/gaiasQr.png",
     images: [
-      "/assets/images/blog1.png",
-      "/assets/images/blog2.png",
-      "/assets/images/blog3.png"
+      "/assets/images/webDevelopment/gaias/frame1.png",
+      "/assets/images/webDevelopment/gaias/frame2.png",
+      "/assets/images/webDevelopment/gaias/frame3.png",
+      "/assets/images/webDevelopment/gaias/frame4.png"
+
     ]
   }
 ];

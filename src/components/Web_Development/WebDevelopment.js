@@ -8,7 +8,7 @@ import 'slick-carousel/slick/slick-theme.css';
 const projects = [
   {
     title: "ART in Augmented Reality",
-    description: "Thesis from Universidad San Francisco de Quito...",
+    description: "ART in Augmented Reality is a web app that helps artists showcase their work using AR technology. It was created to give artists a way to reach audiences digitally without relying on physical galleries, especially during and after the COVID-19 pandemic.",
     url: "https://art-in-augmented-reality.web.app/",
     qrCodeSrc: "/assets/qrcodes/artQR.png",
     youtubeUrl: "https://www.youtube.com/embed/joIjXn2vBqs?si=Ys6nGvSv3uo0Y8B5",

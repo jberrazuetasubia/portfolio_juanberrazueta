@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 
 import Header from './components/Header/Header';
+import HamburgerMenu from './components/Header/HamburgerMenu';
 
 //pages import
 
@@ -17,7 +18,8 @@ function App() {
   return (
     <>
       <div className="app">
-        <Header/>
+        {/* <Header/> */}
+        <HamburgerMenu />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/3d-modeling" element={<Modeling />} />

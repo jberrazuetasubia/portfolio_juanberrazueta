@@ -21,14 +21,14 @@ const projects = [
     ]
   },
   {
-    title: "Panita Food",
-    description: "Panita Food is a personal project...",
-    url: "https://panita-food.vercel.app/",
-    qrCodeSrc: "/assets/qrcodes/panitaQR.png",
+    title: "Fanshawe College Virtual Exhibits",
+    description: "In this project, I created a virtual exhibit for Fanshawe College where people can visualize important objects from the college's history in Augmented Reality.",
+    url: "https://www.fanshawelibrary.com/virtual-exhibits/",
+    qrCodeSrc: "/assets/qrcodes/virtualExhibits.png",
     images: [
-      "/assets/images/panita1.png",
-      "/assets/images/panita2.png",
-      "/assets/images/panita3.png"
+      "/assets/images/webDevelopment/virtualExhibits/frame1.png",
+      "/assets/images/webDevelopment/virtualExhibits/frame2.png",
+      "/assets/images/webDevelopment/virtualExhibits/frame3.png"
     ]
   },
   {
@@ -75,6 +75,7 @@ const WebDevelopment = () => {
         <h2>My Skills</h2>
         <ul className="skills-list">
           <li>HTML, CSS, JavaScript</li>
+          <li>WordPress</li>
           <li>React, Angular, Vue.js</li>
           <li>Node.js, Express</li>
           <li>RESTful APIs, GraphQL</li>
@@ -82,6 +83,7 @@ const WebDevelopment = () => {
           <li>Git, GitHub</li>
           <li>WordPress</li>
           <li>AR Implementation</li>
+          
         </ul>
       </div>
 

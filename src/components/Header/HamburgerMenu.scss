@@ -1,0 +1,42 @@
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2.5rem;
+    position: relative;
+    z-index: 999;
+    background: transparent;
+    color: white;
+  }
+  
+  .logo {
+   width: 2.5rem;
+  }
+  
+  .menu-icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .menu-icon .icon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .menu-icon .icon i {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    display: block;
+  }
+  
+  .menu-text {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+  }
+  
